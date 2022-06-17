@@ -1,13 +1,12 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
-
-
 }
-@model Dictionary<string,string>
+@model List<Setting>
 
 <div>
     <row>
+        
         <div class="col-md-10 mx-auto">
             @*<a type="button" class="btn btn-primary" asp-controller="Setting" asp-action="Create">Create</a>*@
         </div>
@@ -29,8 +28,8 @@
                              <td>@item.Value</td>
 
                              <td>
-                                 <a asp-controller="Setting" asp-action="Edit" asp-route-key="@item.Key" type="button" class="btn btn-warning">Edit</a>
-                                 <a asp-controller="Setting" asp-action="Delete" asp-route-key="@item.Key" type="button" class="btn btn-danger">Delete</a>
+                                 <a asp-controller="Setting" asp-action="Edit" asp-route-Id="@item.Id"  class="btn btn-warning">Edit</a>
+                                 <a asp-controller="Setting" asp-action="Delete" asp-route-Id="@item.Id"  class="btn btn-danger">Delete</a>
                              </td>
                          </tr>
                      }

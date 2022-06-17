@@ -194,18 +194,18 @@ namespace Pustok.Areas.Manage.Controllers
                 hover.Name = FileManager.Save(_env.WebRootPath, "upload/book",book.HoverFile);
             }
 
-            /*var notExistsInBook = isExists.BookImages.Where(x => !book.ImageIds.Contains(x.Id) && x.PosterStatus == null);
-            if (notExistsInBook!= null)
+            var notExistsInBook = isExists.BookImages.Where(x => !book.ImageIds.Contains(x.Id) && x.PosterStatus == null);
+            if (notExistsInBook != null)
             {
                 foreach (var item in notExistsInBook)
                 {
                     deleteFiles.Add(item.Name);
-                    *//*isExists.BookImages.Remove(item);*//*
+                    isExists.BookImages.Remove(item);
                 }
-            }*/
+            }
 
-           
-            
+
+
             AddImageFiles(isExists, book.ImageFiles);
 
             isExists.AuthorId = book.AuthorId;

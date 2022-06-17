@@ -19,13 +19,13 @@ namespace Pustok.Areas.Manage.Controllers
         }
         public IActionResult Index()
         {
-            var setting = _context.Settings.ToDictionary(x => x.Key, y => y.Value);
+            var setting = _context.Settings.ToList();
             
             return View(setting);
         }
-        public IActionResult Edit(string key) 
+        public IActionResult Edit(int Id) 
         {
-            var setting = _context.Settings.FirstOrDefault(x => x.Key == key);
+            var setting = _context.Settings.FirstOrDefault(x=>x.Id == Id);
             if (setting==null)
             {
                 return NotFound();
@@ -38,18 +38,17 @@ namespace Pustok.Areas.Manage.Controllers
         [HttpPost]
         public IActionResult Edit(Setting setting) 
         {
-            if (!ModelState.IsValid)
+           /* if (!ModelState.IsValid)
             {
                 return View();
-            }
+            }*/
 
-            var isExists = _context.Settings.FirstOrDefault(x => x.Key == setting.Key && x.Value == setting.Value);
+            var isExists = _context.Settings.FirstOrDefault(x => x.Id == setting.Id);
             if (isExists == null)
             {
                 return NotFound();
             }
             isExists.Value = setting.Value;
-            isExists.Key = setting.Key;
             _context.SaveChanges();
             return RedirectToAction("index");
 
