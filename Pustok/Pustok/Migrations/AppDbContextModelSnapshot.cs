@@ -493,6 +493,9 @@ namespace Pustok.Migrations
                     b.Property<string>("FullName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("bit");
+
                     b.HasDiscriminator().HasValue("AppUser");
                 });
 

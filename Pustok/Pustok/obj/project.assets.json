@@ -8625,23 +8625,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Resul023\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Resul023\\Desktop\\asdas\\17Iyun\\Pustok\\Pustok\\Pustok.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\18Iyun\\Pustok\\Pustok\\Pustok.csproj",
       "projectName": "Pustok",
-      "projectPath": "C:\\Users\\Resul023\\Desktop\\asdas\\17Iyun\\Pustok\\Pustok\\Pustok.csproj",
-      "packagesPath": "C:\\Users\\Resul023\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Resul023\\Desktop\\asdas\\17Iyun\\Pustok\\Pustok\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\18Iyun\\Pustok\\Pustok\\Pustok.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\18Iyun\\Pustok\\Pustok\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Resul023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8701,6 +8701,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.25, 3.1.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8709,7 +8715,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
